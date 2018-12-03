@@ -37,7 +37,7 @@ app.post('/api/pirates', function(req, res) {
   console.log(req.body);
   Pirate.create(req.body, (err, pirate) => {
     if (err) return console.log(err);
-
+    console.log(res)
     return res.send(pirate);
   });
 });
